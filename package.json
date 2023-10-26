@@ -1,0 +1,21 @@
+{
+  "name": "extension-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bun build --target=browser --minify --outdir=dist src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "monaco-editor": "^0.44.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
