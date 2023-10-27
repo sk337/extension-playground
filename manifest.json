@@ -1,0 +1,26 @@
+{
+    "name": "extension api Playground",
+    "description": "Play with extension apis",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "cookies",
+        "geolocation",
+        "history",
+        "idle",
+        "management",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*",
+        "identity",
+        "identity.email",
+        "webNavigation",
+        "notifications",
+        "backgorund"
+    ]
+}

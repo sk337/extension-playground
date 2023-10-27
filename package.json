@@ -5,18 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bun build --target=browser --minify --outdir=dist src/index.js"
+    "build": "bun build --target=browser --minify --outdir=dist src/index.js",
+    "esbuild": "esbuild src/index.js --bundle --outfile=dist/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bun": "^1.0.7",
-    "monaco-editor": "^0.44.0"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
+    "copy-webpack-plugin": "^11.0.0",
+    "monaco-editor": "^0.44.0",
+    "webpack": "^5.89.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.5",
+    "webpack-cli": "^5.1.4"
   }
 }
